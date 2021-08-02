@@ -25,4 +25,20 @@ class DigitsSumAlgorithmTest {
 
         Assertions.assertEquals(expected2, actual);
     }
+
+    @Test
+    void testDivisionBasedDigitsSumAlgorithm1() {
+        DigitsSumAlgorithm algorithm = new DivisionBasedDigitsSumAlgorithm();
+        int actual = algorithm.calculate(value1);
+
+        Assertions.assertEquals(expected1, actual);
+    }
+
+    @Test
+    void testDivisionBasedDigitsSumAlgorithm2() {
+        DigitsSumAlgorithm algorithm = new DivisionBasedDigitsSumAlgorithm();
+        int actual = algorithm.calculate(value2);
+
+        Assertions.assertEquals(expected2, actual);
+    }
 }
